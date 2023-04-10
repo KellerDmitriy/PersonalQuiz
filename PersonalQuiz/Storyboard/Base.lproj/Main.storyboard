@@ -324,7 +324,15 @@
                             <constraint firstItem="62o-LO-nVZ" firstAttribute="leading" secondItem="pdl-D0-Zgt" secondAttribute="leading" constant="16" id="q7o-uI-Mv7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="42K-Yi-I93"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Результат" id="42K-Yi-I93">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="cwb-tC-xFG">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="wNJ-h4-DWP" id="Fjw-3v-IE3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="emojiResultLabel" destination="xBL-n9-BE8" id="ZMH-gX-WBR"/>
                         <outlet property="resultLabel" destination="Ox3-J9-BFx" id="mSi-58-9ow"/>

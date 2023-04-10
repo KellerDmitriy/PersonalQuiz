@@ -25,13 +25,14 @@ final class ResultViewController: UIViewController {
         // answerAnimalEmojiLabel.text = "Вы - \()"
     }
     
+    // MARK: - IB Actions
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
+    
     // MARK: - Private Methods
 
-    //    private func answerWhatAnimal() {
-    //        var answersChosenAnimal: [Animal : Int] = [:]
-    //        for answer in answersChosen {
-    //            if animal
-    //            answersChosenAnimal.append(answer : countAnswer)
-    //        }
-    //    }
+    private func answerWhatAnimal() {
+        let answersChosenAnimal = answersChosen.map { $0.animal}
+    }
 }

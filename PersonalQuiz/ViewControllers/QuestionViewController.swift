@@ -46,6 +46,7 @@ final class QuestionViewController: UIViewController {
         guard let resultVS = segue.destination as? ResultViewController else { return }
         resultVS.answersChosen = answersChosen
     }
+    
     // MARK: - IB Actions
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
         guard let buttonIndex = singleButtons.firstIndex(of: sender) else { return }
